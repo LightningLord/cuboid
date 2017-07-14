@@ -31,4 +31,19 @@ describe Cuboid do
     end
   end
 
+  describe 'vertices' do
+    it 'returns a collection of vertices' do
+      expect(cuboid.vertices).to eq([
+        [0,0,0],
+        [2,0,0],
+        [2,2,0],
+        [2,0,2],
+        [2,2,2],
+        [0,2,2],
+        [0,0,2],
+        [0,2,0]
+        ])
+    end
+  end
+
 end
