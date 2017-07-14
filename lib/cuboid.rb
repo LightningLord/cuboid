@@ -49,9 +49,9 @@ class Cuboid
   #returns true if the point is within the cuboid
   def interior?(coords)
     x, y, z = coords
-    x > @origin_x && x < @max_x &&
-    y > @origin_y && y < @max_y &&
-    z > @origin_z && z < @max_z
+    x >= @origin_x && x <= @max_x &&
+    y >= @origin_y && y <= @max_y &&
+    z >= @origin_z && z <= @max_z
   end
 
 end
